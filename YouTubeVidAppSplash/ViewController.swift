@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import WebKit 
+import WebKit
+    
 
 class ViewController: UIViewController {
     @IBOutlet var ytWebView: WKWebView!
@@ -24,10 +25,12 @@ class ViewController: UIViewController {
         let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
         ytWebView.load(URLRequest(url: url!))
         
-        if url == nil {
-            print("Video not Found")
+        if url != URL(string: "https://www.youtube.com/embed/C0Z6tJdeQ_E)") {
+            print("url")
+            
         }
         
     }
     
 }
+
